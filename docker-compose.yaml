@@ -1,0 +1,13 @@
+# Path: docker-compose.yml
+
+
+version: '3.8'
+
+services:
+  app:
+    container_name: docker-app
+    image: docker-react-app
+    build:
+      context: .
+    ports:
+      - 8080:80
