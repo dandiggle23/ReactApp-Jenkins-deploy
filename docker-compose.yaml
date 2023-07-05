@@ -5,8 +5,8 @@ version: '3.8'
 
 services:
   app:
-    container_name: docker-app
-    image: docker-react-app
+    container_name: react-app
+    image: react-app
     build:
       context: .
     ports:
