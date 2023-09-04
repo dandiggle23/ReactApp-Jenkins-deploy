@@ -2,7 +2,11 @@ pipeline {
     agent any
 
     stages {
-        
+        stage('Clone repository') {
+            steps {
+                git 'https://github.com/dandiggle23/jenkins-ecr-eks-deploy.git'
+            }
+        }
 
         stage('Build Docker image') {
             steps {
